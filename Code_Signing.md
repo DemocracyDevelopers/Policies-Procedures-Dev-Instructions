@@ -25,3 +25,8 @@ git commit -S -m "YOUR_COMMIT_MESSAGE"
 git push
 
 ```
+
+5. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
+```
+git config --global commit.gpgsign true
+```
