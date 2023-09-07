@@ -26,7 +26,13 @@ git push
 
 ```
 
-5. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
+5. If it doesn't work, you might need to update some parts of your git configuration. Try
+```
+git config commit.gpgsign true
+git config --global gpg.format ssh
+```
+
+6. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
 ```
 git config --global commit.gpgsign true
 ```
