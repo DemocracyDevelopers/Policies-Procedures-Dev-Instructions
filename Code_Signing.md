@@ -28,9 +28,9 @@ git push
 
 5. If it doesn't work, you might need to update some parts of your git configuration. Try
 ```
-git config commit.gpgsign true
 git config --global gpg.format ssh
 ```
+and look for other instructions at [the github docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).
 
 6. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
 ```
