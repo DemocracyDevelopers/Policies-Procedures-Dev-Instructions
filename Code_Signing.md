@@ -30,7 +30,7 @@ git push
 ```
 git config --global gpg.format ssh
 ```
-and look for other instructions at [the github docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).
+and look for other instructions at [the github docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key). If you get an error that ssh is a bad config for gpg.format, you need to [make sure you have the latest version of git](https://git-scm.com/).
 
 6. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
 ```
