@@ -28,11 +28,17 @@ git push
 
 ```
 
-5. If it doesn't work, you might need to update some parts of your git configuration. Try
+## Troubleshooting
+
+5A. If it doesn't work, you might need to update some parts of your git configuration. Try
 ```
 git config --global gpg.format ssh
 ```
 and look for other instructions at [the github docs](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key). If you get an error that ssh is a bad config for gpg.format, you need to [make sure you have the latest version of git](https://git-scm.com/).
+
+5B. If you're on gitLAB, and the signing seems to be working but the commits show up as 'unverified', make sure the email address in the .pub file matches an email address you've verified with gitlab (see above).
+
+## Automation
 
 6. (Optional) If you don’t want to type the -S flag every time you commit, tell Git to sign your commits automatically:
 ```
