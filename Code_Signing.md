@@ -9,7 +9,7 @@ You should give it a different name from the SSH key you use for authentication,
 /home/YOU/.ssh/id_ed25519_signing
 ```
 
-It's acceptable to skip this step and use the same key for signing and authentication, but it's discouraged because you probably want to refresh your authentication key more often than your signing key, and if an authentication key is leaked you don't want all your earlier signed
+It's acceptable to skip this step and use the same key for signing and authentication, but it's discouraged because you probably want to refresh your authentication key more often than your signing key, and if an authentication key is revoked you don't want all your earlier signed
 commits to look unsafe.
 
 Some systems (notably gitLAB, not github) require the email address associated with the signing key to match the email address you've verified with their system. This is unnecessary IMHO, but gitLAB will mark your commits as unverified unless you comply.
